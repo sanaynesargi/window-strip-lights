@@ -1,0 +1,6 @@
+.pio
+.vscode/**
+NightDriverStrip.code-workspace
+src/uzlib/src/*.o
+.history
+
