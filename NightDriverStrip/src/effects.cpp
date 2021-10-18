@@ -236,6 +236,7 @@ CRGBPalette256 USAColors_p  =
 
 CRGBPalette256 rainbowPalette(RainbowColors_p);
 CRGBPalette256 blueSweep(CRGB::Blue, CRGB::Green);
+CRGBPalette256 customEffect(LavaColors_p);
 
 CRGBPalette256 BlueStripes(CRGB::White, CRGB::Blue, CRGB::Blue, CRGB::Blue, CRGB::Blue, CRGB::White, CRGB::Black, CRGB::Black, 
                            CRGB::White, CRGB::Blue, CRGB::Blue, CRGB::Blue, CRGB::Blue, CRGB::White, CRGB::Black, CRGB::Black);
@@ -267,7 +268,7 @@ DRAM_ATTR LEDStripEffect * AllEffects[] =
   #if DEMO
 
     // Animate a simple rainbow palette by using the palette effect on the built-in rainbow palette
-    new PaletteEffect(rainbowPalette, 256/16, .2, 0)
+    new PaletteEffect(MagentaStripes, 256/16, .2, 0)
 
   #elif TREESET
 

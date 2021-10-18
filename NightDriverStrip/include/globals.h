@@ -202,7 +202,7 @@ extern RemoteDebug Debug;           // Let everyone in the project know about it
     // Please ensure you supply sufficent power to your strip, as even the DEMO of 144 LEDs, if set
     // to white, would overload a USB port.
 
-    #define MATRIX_WIDTH            144
+    #define MATRIX_WIDTH            600
     #define MATRIX_HEIGHT           1
     #define NUM_LEDS                (MATRIX_WIDTH*MATRIX_HEIGHT)
     #define NUM_CHANNELS            1

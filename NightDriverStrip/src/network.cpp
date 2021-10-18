@@ -158,7 +158,8 @@ bool ConnectToWiFi(uint cRetries)
         Serial.printf("Pass %u of %u: Connecting to Wifi SSID: %s - ESP32 Free Memory: %u, PSRAM:%u, PSRAM Free: %u\n",
             iPass, cRetries, cszSSID, ESP.getFreeHeap(), ESP.getPsramSize(), ESP.getFreePsram());
 
-        //WiFi.disconnect();
+        WiFi.disconnect(true);
+        WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE);
         WiFi.begin(cszSSID, cszPassword);
 
         for (uint i = 0; i < 10; i++)
